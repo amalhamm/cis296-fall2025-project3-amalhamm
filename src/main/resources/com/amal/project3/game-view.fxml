@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.amal.project3.Project3controller">
+
+    <!-- Top: Player Info and Buttons -->
+    <top>
+        <VBox spacing="10.0" style="-fx-background-color: #E3F2FD; -fx-padding: 15;" BorderPane.alignment="CENTER">
+            <children>
+                <!-- Current Player Info -->
+                <HBox alignment="CENTER" spacing="30.0">
+                    <children>
+                        <Label fx:id="currentPlayerLabel" text="Current Player: ">
+                            <font>
+                                <Font name="System Bold" size="18.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="playerMoneyLabel" text="Money: $0">
+                            <font>
+                                <Font size="18.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="diceResultLabel" text="Click Roll Dice">
+                            <font>
+                                <Font size="18.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </HBox>
+
+                <!-- Buttons -->
+                <HBox alignment="CENTER" spacing="15.0">
+                    <children>
+                        <Button fx:id="rollDiceButton" mnemonicParsing="false" onAction="#onRollDice" prefHeight="40.0" prefWidth="120.0" text="Roll Dice">
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                        </Button>
+                        <Button fx:id="buyPropertyButton" disable="true" mnemonicParsing="false" onAction="#onBuyProperty" prefHeight="40.0" prefWidth="120.0" text="Buy Property" />
+                        <Button fx:id="buildHouseButton" disable="true" mnemonicParsing="false" onAction="#onBuildHouse" prefHeight="40.0" prefWidth="140.0" text="Build House/Hotel" />
+                        <Button fx:id="endTurnButton" disable="true" mnemonicParsing="false" onAction="#onEndTurn" prefHeight="40.0" prefWidth="120.0" text="End Turn" />
+                        <Button fx:id="saveGameButton" mnemonicParsing="false" onAction="#onSaveGame" prefHeight="40.0" prefWidth="120.0" style="-fx-background-color: #4CAF50; -fx-text-fill: white;" text="Save Game" />
+                    </children>
+                </HBox>
+            </children>
+        </VBox>
+    </top>
+
+    <!-- Center: Game Board Only -->
+    <center>
+        <StackPane BorderPane.alignment="CENTER">
+            <children>
+                <GridPane fx:id="boardGrid" alignment="CENTER" hgap="2.0" style="-fx-background-color: #C8E6C9; -fx-padding: 20;" vgap="2.0" />
+            </children>
+        </StackPane>
+    </center>
+
+</BorderPane>
