@@ -13,7 +13,7 @@
 
 
 ## Notes/Comments:
-- I worked on this project with Rama Ibseileh, and we asked the professor for a shared repository but he didnt create it yet, so we are submitting it separately.
-- I used chatgpt to implement a JavaFX GridPane board layout with 40-space Monopoly positioning logic.
-- I used chatgpt to generate property ownership and house-building validation system.
-- I updated project 2 code to fit the requirements of project 3.
+-  Amal Hammoud and Rama Ibseileh worked on this project together, and we asked the professor for a shared repository but he didnt create it yet, so we are submitting it from this repository.
+- We used some help from chatgpt to implement a JavaFX GridPane board layout with 40-space Monopoly positioning logic.
+- We used some help from chatgpt to generate property ownership and house-building validation system.
+- We used Amal Hammoud's version for the monopoly game and we updated project 2 code to fit the requirements of project 3.
